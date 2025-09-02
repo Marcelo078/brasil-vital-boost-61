@@ -2,41 +2,70 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* Brasil Vital Boost - Design System Otimizado para Conversão
+Todas as cores devem ser HSL para máxima flexibilidade.
 */
 
 @layer base {
   :root {
+    /* Core Colors - Fundo branco limpo, texto escuro legível */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 220 15% 15%;
 
+    /* Card System - Cards limpos para artigos */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 220 15% 15%;
 
+    /* Popover */
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 220 15% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary - Azul confiável para CTAs principais */
+    --primary: 214 84% 56%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 214 84% 46%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary - Cinza elegante */
+    --secondary: 210 20% 96%;
+    --secondary-foreground: 220 15% 25%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* CTA Orange - Laranja para conversão */
+    --cta-orange: 25 95% 53%;
+    --cta-orange-foreground: 0 0% 100%;
+    --cta-orange-hover: 25 95% 43%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Success Green - Verde para testimonials */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
 
+    /* Text Colors */
+    --muted: 210 20% 96%;
+    --muted-foreground: 220 15% 55%;
+
+    --accent: 210 20% 96%;
+    --accent-foreground: 220 15% 25%;
+
+    /* Destructive mantido */
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Borders e Inputs - Sutis */
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 214 84% 56%;
 
-    --radius: 0.5rem;
+    /* Gradients para hero sections */
+    --gradient-primary: linear-gradient(135deg, hsl(214 84% 56%), hsl(214 84% 66%));
+    --gradient-cta: linear-gradient(135deg, hsl(25 95% 53%), hsl(25 95% 63%));
+    
+    /* Shadows elegantes */
+    --shadow-card: 0 4px 6px -1px hsl(220 15% 15% / 0.1), 0 2px 4px -1px hsl(220 15% 15% / 0.06);
+    --shadow-cta: 0 10px 25px -5px hsl(25 95% 53% / 0.3);
+
+    /* Animações suaves */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
